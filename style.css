@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background-color:rgb(200, 242, 255);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+h1{
+    font-family: monospace;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    padding: 10px;
+}
+
+
+.square{
+    width: 120px;
+    height: 120px;
+    /* border-style: solid; */
+    /* border-color: black; */
+    margin: 0;
+}
+
+.square:nth-child(odd){
+    background-color:white;
+
+}
+
+.square:nth-child(even){
+    background-color:black;
+
+}
+
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    width: 360px;
+    height: 360px;
+}
+ 
+.mole{
+    background-image: url('images/mole.png');
+    background-size: cover;
+}
+
+@media screen and (max-width: 520px) {
+    .grid{
+        width: 270px;
+        height: 270px;
+    }
+    
+    .grid div{
+        width: 90px;
+        height: 90px;
+    }
+
+}
